@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: SpringBootTutor
+Implementation-Version: 1
+Built-By: 886758
+Implementation-Vendor-Id: com
+Build-Jdk: 1.8.0_131
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/SpringBootTutor
+Created-By: Maven Integration for Eclipse
+
