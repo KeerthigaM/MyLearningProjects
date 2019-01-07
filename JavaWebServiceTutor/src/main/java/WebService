@@ -1,0 +1,50 @@
+Web service is a technology to communicate one programming language with another. 
+For example, java programming language can interact with PHP and .Net by using web services. 
+In other words, web service provides a way to achieve interoperability.
+
+A Web Service is can be defined by following ways:
+	is a client server application or application component for communication.
+	method of communication between two devices over network.
+	is a software system for interoperable machine to machine communication.
+	is a collection of standards or protocols for exchanging information between two devices or application.
+java, .net or PHP applications can communicate with other applications through web service over the network. 
+For example, java application can interact with Java, .Net and PHP applications. 
+So web service is a language independent way of communication.
+
+There are mainly two types of web services.
+1.SOAP web services.
+2.RESTful web services.
+
+Web Service Components
+There are three major web service components.
+1.SOAP
+	is an acronym for Simple Object Access Protocol.
+	is a XML-based protocol for accessing web services.
+	is a W3C recommendation for communication between applications.
+	is XML based, so it is platform independent and language independent. 
+		In other words, it can be used with Java, .Net or PHP language on any platform.
+2.WSDL
+	is an acronym for Web Services Description Language.
+	is a xml document containing information about web services such as method name, method parameter and how to access it.
+	is a part of UDDI. It acts as a interface between web service applications.
+	is pronounced as wiz-dull.
+3.UDD
+	is an acronym for Universal Description, Discovery and Integration.
+	is a XML based framework for describing, discovering and integrating web services.
+	is a directory of web service interfaces described by WSDL, containing information about web services.
+
+Service Oriented Architecture (SOA)
+Service Oriented Architecture or SOA is a design pattern. 
+It is designed to provide services to other applications through protocol.
+It is a concept only and not tied to any programming language or platform.
+
+Web services is a technology of SOA most likely.
+
+Service
+A service is well-defined, self-contained function that represents unit of functionality. 
+A service can exchange information from another service. It is not dependent on the state of another service.
+
+Service Connections
+The figure given below illustrates the service oriented architecture. 
+Service consumer sends service request to the service provider and service provider sends the service response to the service consumer. 
+The service connection is understandable to both service consumer and service provider.

@@ -1,0 +1,22 @@
+REST stands for REpresentational State Transfer.	
+REST is an architectural style not a protocol.
+HTTP is a protocol which contains the set of REST architectural constraints.
+
+REST fundamentals:
+Everything in REST is considered as a resource.
+Every resource is identified by an URI.
+Uses uniform interfaces. Resources are handled using POST, GET, PUT, DELETE operations which are similar to CRUD operations.
+Be stateless. Every request is an independent request. Each request from client to server must contain all the information necessary to understand the request.
+Communications are done via representations. E.g. XML, JSON
+
+Advantages of RESTful Web Services
+Fast: RESTful Web Services are fast because there is no strict specification like SOAP. It consumes less bandwidth and resource.
+Language and Platform independent: RESTful web services can be written in any programming language and executed in any platform.
+Can use SOAP: RESTful web services can use SOAP web services as the implementation.
+Permits different data format: RESTful web service permits different data format such as Plain Text, HTML, XML and JSON.
+
+JAX-RS is the java API for RESTful web services.
+
+There are two main implementation of JAX-RS API.
+1.Jersey
+2.RESTEasy
