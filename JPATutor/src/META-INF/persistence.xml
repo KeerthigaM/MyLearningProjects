@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence 
+   http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+   
+   <persistence-unit name="JPA_Basic" transaction-type="RESOURCE_LOCAL">   
+      <class>com.entity.Clas</class>
+      <class>com.entity.Department</class>
+      <class>com.entity.Employee</class>
+      <class>com.entity.NonTeachingStaff</class>
+      <class>com.entity.Staff</class>
+      <class>com.entity.Student</class>
+      <class>com.entity.Teacher</class>
+      <class>com.entity.TeachingStaff</class>
+      <properties>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/kirthidb"/>
+         <property name="javax.persistence.jdbc.user" value="kirthi"/>
+         <property name="javax.persistence.jdbc.password" value="G@nesh@64"/>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="eclipselink.logging.level" value="FINE"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+      </properties>      
+   </persistence-unit>
+   
+   <persistence-unit name="JPA_AdvancedMapping" transaction-type="RESOURCE_LOCAL">
+      <class>com.entity.Staff</class>
+      <class>com.entity.TeachingStaff</class>
+      <class>com.entity.NonTeachingStaff</class>
+      <properties>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/kirthidb"/>
+         <property name="javax.persistence.jdbc.user" value="kirthi"/>
+         <property name="javax.persistence.jdbc.password" value="G@nesh@64"/>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="eclipselink.logging.level" value="FINE"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+      </properties>      
+   </persistence-unit>
+   
+   <persistence-unit name="JPA_EntityRelationShip" transaction-type="RESOURCE_LOCAL">
+     <class>com.entity.Student</class>
+     <class>com.entity.Department</class>
+     <class>com.entity.Clas</class>
+     <class>com.entity.Teacher</class>
+     <properties>
+         <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/kirthidb"/>
+         <property name="javax.persistence.jdbc.user" value="kirthi"/>
+         <property name="javax.persistence.jdbc.password" value="G@nesh@64"/>
+         <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+         <property name="eclipselink.logging.level" value="FINE"/>
+         <property name="eclipselink.ddl-generation" value="create-tables"/>
+     </properties>      
+   </persistence-unit>
+</persistence>
