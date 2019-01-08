@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Jan 08 15:32:53 IST 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0168-2cea-363a-ffffc7f7a925 
+on database directory D:\Users\886758\Documents\Keerthiga_886758\Workspace\CoreJavaTutorial\src\main\resources\.derby\kirthidb with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
+Loaded from file:/D:/Users/886758/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_131-b11
+user.dir=D:\Users\886758\Documents\Keerthiga_886758\Workspace\CoreJavaTutorial
+os.name=Windows 8.1
+os.arch=amd64
+os.version=6.3
+derby.system.home=D:\Users\886758\Documents\Keerthiga_886758\Workspace\CoreJavaTutorial\src\main\resources/.derby
+Database Class Loader started - derby.database.classpath=''
