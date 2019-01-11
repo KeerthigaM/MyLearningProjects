@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>textFile with Controller</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app='myApp' ng-controller='myCtrl'>
+		First Name: <input type="text" ng-model="student.firstName"><br>
+		Last Name : <input type="text" ng-model="student.lastName"><br>
+		Your Full Name is: {{student.fullName()}}		
+	</div>      
+	<script>
+	 var mainApp=angular.module('myApp',[]);
+	 mainApp.controller('myCtrl', function($scope)
+						 			{
+					 				$scope.student=
+					 				     {
+					 						firstName: "Kirthi",
+					 						lastName:  "Margesan",
+					 						fullName: function()
+				 									  {
+					 									var stud=$scope.student;
+					 									return stud.firstName+" "+stud.lastName;
+					 								  }
+					 				     };
+						 			}
+	 				   );
+	</script>
+</body>
+</html>

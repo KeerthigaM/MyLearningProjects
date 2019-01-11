@@ -1,0 +1,22 @@
+<html>   
+   <head>
+      <title>Internationalisation</title>
+   </head>
+   <body>
+      <div ng-app = 'internationalisationApp' ng-controller = 'internationalisationCtrl'>
+         {{fees | currency }}  <br/><br/>
+         {{admissiondate | date }}  <br/><br/>
+         {{rollno | number }}
+      </div>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+      <!-- <script src = "https://code.angularjs.org/1.3.14/i18n/angular-locale_da-dk.js"></script> -->
+      <script>
+         var mainApp = angular.module('internationalisationApp', []);
+         mainApp.controller('internationalisationCtrl', function($scope) {
+            $scope.fees = 100;
+            $scope.admissiondate  = new Date();
+            $scope.rollno = 123.45;
+         });
+      </script>
+   </body>
+</html>

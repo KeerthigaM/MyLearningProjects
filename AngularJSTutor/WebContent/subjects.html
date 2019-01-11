@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+<p>Subjects:</p>
+<table>
+   <tr>
+      <th>Name</th>
+      <th>Marks</th>
+   </tr>
+   
+   <tr ng-repeat = "subject in student.subjects">
+      <td>{{ subject.name }}</td>
+      <td>{{ subject.marks }}</td>
+   </tr>
+</table>
+</body>
+</html>

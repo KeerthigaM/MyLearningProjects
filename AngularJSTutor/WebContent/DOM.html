@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>DOM</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<style>
+   table, th , td {
+      border: 1px solid grey;
+      border-collapse: collapse;
+      padding: 5px;
+   }
+   
+   table tr:nth-child(odd) {
+      background-color: #f2f2f2;
+   }
+   
+   table tr:nth-child(even) {
+      background-color: #ffffff;
+   }
+</style>
+</head>
+<body>
+	<div ng-app>
+		<table>
+			<tr>
+				<th>function</th>
+				<th>Input</th>
+				<th>Output</th>
+			</tr>
+			<tr>
+				<td>ng-disabled</td>
+				<td><input type = "checkbox" ng-model = "enableDisableButton">Disable Button </td>
+				<td><button ng-disabled = "enableDisableButton">Click Me!</button></td>
+			</tr>
+			<tr>
+				<td>ng-show</td>
+				<td><input type = "checkbox" ng-model = "showHide1">Show Button</td>
+				<td><button ng-show = "showHide1">Click Me!</button></td>
+			</tr>
+			<tr>
+				<td>ng-hide</td>
+				<td><input type = "checkbox" ng-model = "showHide2">Hide Button</td>
+				<td><button ng-hide = "showHide2">Click Me!</button></td>
+			</tr>
+			<tr>
+				<td>ng-click</td>				
+				<td><button ng-click = "clickCounter = clickCounter + 1">Click Me!</button></td>
+				<td><p>Total click: {{ clickCounter }}</p></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

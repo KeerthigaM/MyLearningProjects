@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Filters</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body>
+ <div ng-app = 'filterApp' ng-controller = 'filterCtrl'>
+         <table border = "0">
+            <tr>
+               <td>Enter first name:</td>
+               <td><input type = "text" ng-model = "student.firstName"></td>
+            </tr>            
+            <tr>
+               <td>Enter last name: </td>
+               <td><input type = "text" ng-model = "student.lastName"></td>
+            </tr>            
+            <tr>
+               <td>Enter fees: </td>
+               <td><input type = "text" ng-model = "student.fees"></td>
+            </tr>            
+            <tr>
+               <td>Enter subject: </td>
+               <td><input type = "text" ng-model = "subjectName"></td>
+            </tr>
+         </table>
+         <br/>         
+         <table border = "0">
+            <tr>
+               <td>fullName in Upper Case: </td>
+               <td>{{student.fullName() | uppercase}}</td>
+            </tr>         
+            <tr>
+               <td>fullName in Lower Case: </td>
+               <td>{{student.fullName() | lowercase}}</td>
+            </tr>         
+            <tr>
+               <td>fees in currency format: </td>
+               <td>{{student.fees | currency}}
+               </td>
+            </tr>				
+            <tr>
+               <td>Subject:</td>
+               <td>
+                  <ul>
+                     <li ng-repeat = "subject in student.subjects | filter: subjectName |orderBy:'marks'">
+                        {{ subject.name + ', marks:' + subject.marks }}
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+         </table>         
+      </div>      
+      <script>
+         var filter = angular.module('filterApp', []);         
+         filter.controller('filterCtrl', function($scope) 
+        		 						  {
+								            $scope.student = 
+								            {
+								               firstName: "Kirthi",
+								               lastName: "Margesan",
+								               fees:500,               
+								               subjects:[
+								                  			{name:'Physics',marks:70},
+								                  			{name:'Chemistry',marks:80},
+								                  			{name:'Maths',marks:65}
+								               			],               
+								               fullName: function() 
+								               			 {
+								                  			var studentObject = $scope.student;
+								                  			return studentObject.firstName + " " + studentObject.lastName;
+								               			 }
+								            };
+         								  }
+         					);
+      </script>
+</body>
+</html>
