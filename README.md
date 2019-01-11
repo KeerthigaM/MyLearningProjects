@@ -1,2 +1,2 @@
-# MyLearningProjects
-Java Web Service Tutorial
+# Java WebService Tutorial
+
