@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+
+ 
+	<bean id="MyXMLApp1" class="dependecnyInjectionByAnnotation.MyXMLApplication">
+		<constructor-arg>
+			<bean class="dependecnyInjectionByAnnotation.TwitterService" />
+		</constructor-arg>
+	</bean>
+	<bean id="MyXMLApp2" class="dependecnyInjectionByAnnotation.MyXMLApplication">
+		<constructor-arg>
+			<bean class="dependecnyInjectionByAnnotation.EmailService" />
+		</constructor-arg>
+	</bean>
+<!-- 
+	<bean id="twitter" class="dependecnyInjectionByAnnotation.TwitterService"></bean>
+	<bean id="email" class="dependecnyInjectionByAnnotation.EmailService"></bean>
+	<bean id="MyXMLApp1" class="dependecnyInjectionByAnnotation.MyXMLApplication">
+		<property name="service" ref="twitter"></property>				
+	</bean>
+	<bean id="MyXMLApp2" class="dependecnyInjectionByAnnotation.MyXMLApplication">
+		<property name="service" ref="email"></property>				
+	</bean>
+ -->	
+</beans>

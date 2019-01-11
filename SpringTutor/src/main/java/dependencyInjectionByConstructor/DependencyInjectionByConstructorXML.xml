@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="emp1" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" type="int"></constructor-arg>		
+	</bean>
+	<bean id="emp2" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" ></constructor-arg>		
+	</bean>
+	<bean id="emp3" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" ></constructor-arg>
+		<constructor-arg value="Kirthi" ></constructor-arg>		
+	</bean>	
+	<bean id="adrs" class="dependencyInjectionByConstructor.Address">
+		<constructor-arg value="Chennai"></constructor-arg>
+		<constructor-arg value="TN"></constructor-arg>
+		<constructor-arg value="India"></constructor-arg>
+	</bean>
+	<bean id="emp4" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" ></constructor-arg>
+		<constructor-arg value="kirthi" ></constructor-arg>
+		<constructor-arg ><ref bean="adrs"/></constructor-arg>		
+	</bean>
+	<bean id="emp8" class="dependencyInjectionByConstructor.Employee" parent="emp3">		
+		<constructor-arg ><ref bean="adrs"/></constructor-arg>		
+	</bean>
+	<bean id="emp5" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" ></constructor-arg>
+		<constructor-arg value="kirthi" ></constructor-arg>
+		<constructor-arg ><ref bean="adrs"/></constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>JAVA</value>
+				<value>Mainframe</value>
+				<value>C++</value>
+				<value>Oracle</value>
+			</list>
+		</constructor-arg>		
+	</bean>
+	<bean id="proj1" class="dependencyInjectionByConstructor.Projects">
+		<constructor-arg value="123"></constructor-arg>		
+		<constructor-arg value="Target"></constructor-arg>
+	</bean>
+	<bean id="proj2" class="dependencyInjectionByConstructor.Projects">
+		<constructor-arg value="456"></constructor-arg>		
+		<constructor-arg value="Staples"></constructor-arg>
+	</bean>
+	<bean id="emp6" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" ></constructor-arg>
+		<constructor-arg value="kirthi" ></constructor-arg>
+		<constructor-arg >
+			<ref bean="adrs"/>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>JAVA</value>
+				<value>Mainframe</value>
+				<value>C++</value>
+				<value>Oracle</value>
+			</list>
+		</constructor-arg>	
+		<constructor-arg>
+			<list>
+				<ref bean="proj1"/>
+				<ref bean="proj2"/>  
+			</list>
+		</constructor-arg>		
+	</bean>
+	
+	<bean id="emp7" class="dependencyInjectionByConstructor.Employee">
+		<constructor-arg value="1" ></constructor-arg>
+		<constructor-arg value="kirthi" ></constructor-arg>
+		<constructor-arg >
+			<ref bean="adrs"/>
+		</constructor-arg>
+		<constructor-arg>
+			<list>
+				<value>JAVA</value>
+				<value>Mainframe</value>
+				<value>C++</value>
+				<value>Oracle</value>
+			</list>
+		</constructor-arg>	
+		<constructor-arg>
+			<list>
+				<ref bean="proj1"/>
+				<ref bean="proj2"/>  
+			</list>
+		</constructor-arg>	
+		<constructor-arg>
+			<map>
+				<entry key-ref="proj1" value="Spring MVC"></entry>				
+				<entry key-ref="proj2" value="Spring Boot"></entry>
+			</map>
+		</constructor-arg>	
+	</bean>
+</beans>
