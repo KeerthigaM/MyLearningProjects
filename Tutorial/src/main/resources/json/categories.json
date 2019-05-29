@@ -1,0 +1,12 @@
+{
+	"FOOD": [
+		{
+			"category": "F01",
+			"description": "Hot Food"
+		},
+		{
+			"category": "F02",
+			"description": "Cold Food"
+		}
+	]
+}

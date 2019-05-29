@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MnSGISTProductMessage
+	xsi:noNamespaceSchemaLocation="MnSProductGIST.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Header>
+		<EnvelopeVersion>2.0</EnvelopeVersion>
+		<Language>en-GB</Language>
+		<MessageId>13b0ba33-c98b-4fb0-a076-1ff0fb9ff6a4</MessageId>
+		<CreatedTimestamp>2018-03-15T13:39:59Z</CreatedTimestamp>
+		<SourceApplicationName>Product Service</SourceApplicationName>
+		<InterfaceId>I3010</InterfaceId>
+		<InterfaceName>Product to GIST</InterfaceName>
+		<SecurityClassification>Confidential</SecurityClassification>
+		<PayloadName>Products</PayloadName>
+		<PayloadVersion>1.0</PayloadVersion>
+		<PayloadKey>legacyProductId</PayloadKey>
+		<BatchMessageCount>1</BatchMessageCount>
+		<BatchRecordCount>132076</BatchRecordCount>
+	</Header>
+</MnSGISTProductMessage>
+<?xml version="1.0" encoding="UTF-8"?>
+<MnSGISTWholesalePriceMessage
+	xsi:noNamespaceSchemaLocation="MnSWholesalePriceGIST.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Header>
+		<EnvelopeVersion>2.0</EnvelopeVersion>
+		<Language>en-GB</Language>
+		<MessageId>cdbacb52-224e-4ad4-9bb1-2c103e365ecb</MessageId>
+		<CreatedTimestamp>2019-03-17T00:00:00Z</CreatedTimestamp>
+		<SourceApplicationName>Price Service</SourceApplicationName>
+		<InterfaceId>I3011</InterfaceId>
+		<InterfaceName>Wholesale Price to GIST</InterfaceName>
+		<SecurityClassification>Confidential</SecurityClassification>
+		<PayloadName>Wholesale Prices</PayloadName>
+		<PayloadVersion>1.0</PayloadVersion>
+		<PayloadKey>legacyProductId</PayloadKey>
+		<BatchMessageCount>1</BatchMessageCount>
+		<BatchRecordCount>10731</BatchRecordCount>
+	</Header>
+</MnSGISTWholesalePriceMessage>

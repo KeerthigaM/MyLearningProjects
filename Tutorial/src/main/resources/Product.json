@@ -1,0 +1,683 @@
+{
+	"parentProductId": "000000000060002878",
+	"legacyProductId": "00781725",
+	"productType": "FoodsNonPerishables",
+	"merchandiseCat": "A11020303",
+	"productCategory": "SingleArticle",
+	"barcodes": {
+		"UPC": "00781725",
+		"SHORTCODE": "981"
+	},
+	"status": "05",
+	"assortmentListType": "Foods",
+	"barcodeIndicator": false,
+	"strokeNumber": "",
+	"hierarchyLevel8": "F8-F338387",
+	"colourDesc": "",
+	"colourCode": "",
+	"customs": {
+		"commodityCode": "1806901900"
+	},
+	"productDescriptions": [
+		{
+			"textDescType": "LONG",
+			"textDesc": "CARAMEL EGGS",
+			"textLanguage": "EN"
+		},
+		{
+			"textDescType": "TILL",
+			"textDesc": "CARAMEL EGGS",
+			"textLanguage": "EN"
+		}
+	],
+	"consumerInformation": {
+		"alcoholPercentage": 0.0
+	},
+	"baseTradeItemFormat": "EA",
+	"productLife": {
+		"periodIndicator": "NotDefined",
+		"totalShelfLife": "29"
+	},
+	"groups": {
+		"hospOrderingGrpID": ""
+	},
+	"tax": [
+		{
+			"country": "AE",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "BE",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "2"
+				}
+			],
+			"inputTaxIndicator": "2"
+		},
+		{
+			"country": "BG",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "CN",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "CS",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "CZ",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "DE",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "ES",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "FI",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "FR",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			],
+			"inputTaxIndicator": "1"
+		},
+		{
+			"country": "GB",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			],
+			"inputTaxIndicator": "1"
+		},
+		{
+			"country": "GG",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "0"
+				}
+			]
+		},
+		{
+			"country": "GI",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "HK",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "HR",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "HU",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "IE",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			],
+			"inputTaxIndicator": "1"
+		},
+		{
+			"country": "IN",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "JTX1",
+					"classification": "1"
+				},
+				{
+					"outputTaxType": 2,
+					"category": "JTX2",
+					"classification": "1"
+				},
+				{
+					"outputTaxType": 3,
+					"category": "JTX3",
+					"classification": "1"
+				},
+				{
+					"outputTaxType": 4,
+					"category": "JTX4",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "JE",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "LK",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "LT",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "LV",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "MY",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "NL",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "2"
+				}
+			],
+			"inputTaxIndicator": "2"
+		},
+		{
+			"country": "NO",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "PL",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "RO",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "SG",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "SI",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "SK",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "TR",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "VN",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		},
+		{
+			"country": "ZA",
+			"outputTax": [
+				{
+					"outputTaxType": 1,
+					"category": "MWST",
+					"classification": "1"
+				}
+			]
+		}
+	],
+	"strokeDesc": [
+		{
+			"language": "EN",
+			"description": "CARAMEL EGGS"
+		}
+	],
+	"storeDisplaySales": {
+		"displayMethod": "Unit",
+		"couponAccepted": false,
+		"serviceWarranty": false
+	},
+	"freshChilled": {
+		"tillcard": true,
+		"typeCode": false
+	},
+	"suppliers": [
+		{
+			"supplierID": "F07213",
+			"factories": [
+				{
+					"factoryID": "F07213",
+					"primaryFactory": false
+				}
+			]
+		},
+		{
+			"supplierID": "F01946",
+			"factories": [
+				{
+					"factoryID": "F01946",
+					"primaryFactory": true
+				}
+			]
+		},
+		{
+			"supplierID": "F04389",
+			"factories": [
+				{
+					"factoryID": "F04389",
+					"primaryFactory": false
+				}
+			]
+		}
+	],
+	"pack": [
+		{
+			"packID": "000000000060002878DIS"
+		},
+		{
+			"packID": "000000000060002878O01"
+		},
+		{
+			"packID": "000000000060002878O02"
+		},
+		{
+			"packID": "000000000060002878O03"
+		}
+	],
+	"properties": {
+		"customMade": false
+	},
+	"hierarchies": {
+		"product": "F8-F338387",
+		"merchandising": "A11020303"
+	},
+	"productHierarchies": [
+		{
+			"nodeId": "F8-F338387",
+			"nodeDescription": "Impulse Sharing",
+			"level": "08"
+		},
+		{
+			"nodeId": "F7-F33809",
+			"nodeDescription": "Easter",
+			"level": "07"
+		},
+		{
+			"nodeId": "F6-F33A",
+			"nodeDescription": "Ambient Celebration",
+			"level": "06"
+		},
+		{
+			"nodeId": "F5-F33",
+			"nodeDescription": "Ambient Celebration",
+			"level": "05"
+		},
+		{
+			"nodeId": "F4-MM12",
+			"nodeDescription": "Biscuits & Confectionery",
+			"level": "04"
+		},
+		{
+			"nodeId": "F3-EX04",
+			"nodeDescription": "Bakery Snacking Cele",
+			"level": "03"
+		},
+		{
+			"nodeId": "F2-FD",
+			"nodeDescription": "Food",
+			"level": "02"
+		},
+		{
+			"nodeId": "MS",
+			"nodeDescription": "Marks and Spencer",
+			"level": "01"
+		}
+	],
+	"productId": "000000000060002878",
+	"lastUpdatedSource": "2019-02-12T20:34:23Z",
+	"ecomExclusive": false,
+	"demandPlanning": [
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "GB",
+			"salesProfile": "2517",
+			"salesProfileDesc": "STANDARD TRADE",
+			"status": "Active",
+			"activationDate": "2016-08-17",
+			"activeForOrderingStart": "2016-08-20",
+			"activeForOrderingEnd": "9999-12-31"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "IE",
+			"status": "Active",
+			"activationDate": "2016-08-17",
+			"activeForOrderingStart": "2016-08-20",
+			"activeForOrderingEnd": "9999-12-31"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "FR",
+			"status": "Active",
+			"activationDate": "2016-08-17",
+			"activeForOrderingStart": "2016-08-20",
+			"activeForOrderingEnd": "9999-12-31"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "NL",
+			"status": "Active",
+			"activationDate": "2016-08-17",
+			"activeForOrderingStart": "2016-08-20",
+			"activeForOrderingEnd": "9999-12-31"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "BE",
+			"status": "Active",
+			"activationDate": "2016-08-17",
+			"activeForOrderingStart": "2016-08-20",
+			"activeForOrderingEnd": "9999-12-31"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		},
+		{
+			"country": "ND",
+			"status": "NotPlanned"
+		}
+	],
+	"version": [
+		{
+			"version": 0,
+			"depth": "145.000",
+			"height": "40.000",
+			"width": "45.000",
+			"unitsOfDimension": "MMT",
+			"volume": "0.261",
+			"grossWeight": "0.000",
+			"unitsOfWeight": "GRM",
+			"unitsOfVolume": "DMQ",
+			"barcodes": {
+				"shortCode": [
+					"981"
+				],
+				"ean13": [],
+				"ean8": [],
+				"upc": [
+					"00781725"
+				],
+				"upcA": []
+			},
+			"comparativePricing": {
+				"value": 100.0,
+				"unitsOfComparison": "GRM"
+			},
+			"unitNetWeight": 120,
+			"drainedWeight": 120,
+			"repStartDate": "2012-09-01",
+			"repEndDate": "9999-12-31"
+		},
+		{
+			"version": 20120901,
+			"depth": "145.000",
+			"height": "40.000",
+			"width": "45.000",
+			"unitsOfDimension": "MMT",
+			"volume": "0.261",
+			"grossWeight": "0.000",
+			"unitsOfWeight": "GRM",
+			"unitsOfVolume": "DMQ",
+			"barcodes": {
+				"shortCode": [
+					"981"
+				],
+				"ean13": [],
+				"ean8": [],
+				"upc": [
+					"00781725"
+				],
+				"upcA": []
+			},
+			"comparativePricing": {
+				"value": 100.0,
+				"unitsOfComparison": "GRM"
+			},
+			"unitNetWeight": 120,
+			"drainedWeight": 120,
+			"repStartDate": "2012-09-01",
+			"repEndDate": "9999-12-31"
+		}
+	]
+}
