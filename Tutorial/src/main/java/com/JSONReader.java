@@ -12,9 +12,9 @@ import com.fasterxml.jackson.core.JsonToken;
 public class JSONReader
 {
 	public static void main(String[] args) throws IOException 
-	{
-		String filename="classpath:RetailPrice.json";
-		File file = ResourceUtils.getFile("D:\\Users\\886758\\Downloads\\BP Files\\FSCLP-177\\extract20190130-141701.json");
+	{	
+		String filepath="D:\\Users\\886758\\Desktop\\T0020001.json";
+		File file = ResourceUtils.getFile(filepath);
 		JsonFactory factory = new JsonFactory();
 		JsonParser parser = factory.createParser(file);
 		while (!parser.isClosed()) 
@@ -29,34 +29,34 @@ public class JSONReader
 	private static void processJSONObject(JsonParser parser, String indent) throws IOException 
 	{		
 		indent += " ";
-		//System.out.println(indent + "{");
+		System.out.println(indent + "{");
 		while (!parser.isClosed()) 
 		{
 			JsonToken token = parser.nextToken();
 			if (JsonToken.END_OBJECT.equals(token))// The end of the JSON object has been reached 
 			{
-				//System.out.println(indent + "}");	break;
+				System.out.println(indent + "}");	break;
 		    }
 			if (!JsonToken.FIELD_NAME.equals(token)) 
 			{
-				//System.out.println("Error. Expected a field name");
+				System.out.println("Error. Expected a field name");
 				break;
 			}
-			//System.out.print(indent+parser.getCurrentName()+" : ");
-			if(parser.getCurrentName().equals("productId")){token = parser.nextToken();System.out.println(parser.getValueAsString());}
-			else {token = parser.nextToken();}
+			System.out.print(indent+parser.getCurrentName()+" : ");
+			//if(parser.getCurrentName().equals("productId")){token = parser.nextToken();System.out.println(parser.getValueAsString());}
+			//else {token = parser.nextToken();}
 			processJSONValue(token, parser, indent);
 		}
 	}
 	private static void processJSONArray(JsonParser parser, String indent) throws IOException 
 	{		
 		indent += " ";
-		//System.out.println(indent + "[");
+		System.out.println(indent + "[");
 		while (!parser.isClosed()) {
 			JsonToken token = parser.nextToken();
 			if (JsonToken.END_ARRAY.equals(token))// The end of the array has been reached 
 			{
-				//System.out.println(indent + "]");	break;
+				System.out.println(indent + "]");	break;
 			}
 			processJSONValue(token, parser, indent);
 		}
@@ -68,7 +68,7 @@ public class JSONReader
 		} else if (JsonToken.START_ARRAY.equals(token)) {
 			processJSONArray(parser, indent);
 		} else {
-			//System.out.println(parser.getValueAsString());
+			System.out.println(parser.getValueAsString());
 		}		
 	}
 }
