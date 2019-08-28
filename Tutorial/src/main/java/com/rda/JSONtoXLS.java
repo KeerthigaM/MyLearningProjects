@@ -15,13 +15,13 @@ import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Fillo;
 
 public class JSONtoXLS {
-	public static String filloquery = "INSERT INTO T0020161_SIT1(A,B,C,D,E,F,G,H,I,J,K) VALUES(";
+	public static String filloquery = "INSERT INTO T0020002(A,B,C,D,E,F,G,H,I,J,K) VALUES(";
 	private static final String filepath="D:\\Users\\886758\\Documents\\Keerthiga_886758\\M&S\\RDA\\";	
 	public static void main(String[] args) throws IOException, FilloException, InterruptedException {			
-		ProductJsonReader(filepath+"T0020161_SIT1.json");
+		jsonReader(filepath+"T0020002_Support.json");
 		System.out.println("DONE");
 	}
-	private static void ProductJsonReader(String filename) {
+	private static void jsonReader(String filename) {
 		JSONParser parser = new JSONParser();		 
         try 
         { 

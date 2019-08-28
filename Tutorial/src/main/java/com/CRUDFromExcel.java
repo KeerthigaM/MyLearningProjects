@@ -13,7 +13,7 @@ public class CRUDFromExcel
 	public static void main(String[] args) throws InterruptedException, IOException, FilloException
 	{
 		String FILEPATH="D:\\Users\\886758\\Downloads\\RDA_AWS_DB.xlsx";
-		
+		excel2Console(FILEPATH);
 	}
 	
 	public static boolean updateExcel(String filepath, String id, String mail) throws FilloException {
@@ -35,19 +35,35 @@ public class CRUDFromExcel
 		connection.close();
 		return false;
 	}
+	
+	private static void excel2Console(String FILEPATH) throws FilloException {
+		Recordset recordset = readFromExcel(FILEPATH,"sheetname");
+		ArrayList<String> header = getHeader(recordset);
+		readRS(recordset,header);		
+	}
+	
+	private static void readRS(Recordset recSet, ArrayList<String> header) throws FilloException {
+		while(recSet.next()) 
+		{
+			for(String head:header) {
+			System.out.println(head+" : "+recSet.getField(head).toString());
+			}
+			System.out.println("=========================X=========================");
+		}
+	}
+	
+	private static ArrayList<String> getHeader(Recordset rs) throws FilloException 
+	{	
+		ArrayList<String> header= rs.getFieldNames();
+		return header;
+	}
 
-	public static ArrayList<String> readFromExcel(String filepath) throws FilloException 
+	public static Recordset readFromExcel(String filepath,String sheetName) throws FilloException 
 	{
 		Fillo fillo=new Fillo();
 		Connection connection=fillo.getConnection(filepath);
-		String strQuery="Select * from MnS";
+		String strQuery="Select * from "+sheetName;
 		Recordset recordset=connection.executeQuery(strQuery);
-		ArrayList<String> empID = new ArrayList<String>(); 
-		while(recordset.next()){	
-			empID.add(recordset.getField("Emp_ID").toString());
-		}
-		recordset.close();
-		connection.close();
-		return empID;
-	}	
+		return recordset;
+	}
 }

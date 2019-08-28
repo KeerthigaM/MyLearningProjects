@@ -11,10 +11,10 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class XMLReader {
-
+	private static final String filepath="D:\\Users\\886758\\Documents\\Keerthiga_886758\\M&S\\BP Files\\JSON files\\";
 	public static void main(String[] args) {
-		productXMLReader("");
-		priceXMLReader("");
+		//productXMLReader("");
+		priceXMLReader("D:\\Users\\886758\\Documents\\Keerthiga_886758\\M&S\\BP Files\\whs\\I2133_BP_RETAIL_PRICE_UPDATES_20190828071534.xml");
 	}
 
 	private static void priceXMLReader(String file) {

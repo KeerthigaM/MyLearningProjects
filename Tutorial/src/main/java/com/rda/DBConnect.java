@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Fillo;
 
-public class DBtoXLS
+public class DBConnect
 {
 	public static String filloquery = "INSERT INTO pt_rda(A,B,C,D,E,F) VALUES(";
 	public static String DBNAME = "rda_pt";
