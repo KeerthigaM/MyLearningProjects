@@ -14,8 +14,8 @@ public class DBtoXLS
 {
 	public static String filloquery = "INSERT INTO pt_rda(A,B,C,D,E,F) VALUES(";
 	public static String DBNAME = "rda_pt";
-	public static String FILEPATH="D:\\Users\\886758\\Documents\\Keerthiga_886758\\M&S\\RDA\\RDA_AWS_DB.xlsx";
-	public static int maxHeader=6;
+	public static String FILEPATH="D:/Users/886758/Documents/Keerthiga_886758/M&S/RDA/RDA_AWS_DB.xlsx";
+	public static int maxHeader=6;//not less than 3
 	public static boolean consoleFlag=true;
 	public static void main(String args[]) throws SQLException 
 	{	
@@ -59,7 +59,8 @@ public class DBtoXLS
 				append = append + data +"','";
 			}
 			writeData(append,header.size());
-		}
+		}		
+		writeData("'','",1);
 	}
 	public static void writeData(String append, int headerSize) throws FilloException {
 		append=append.substring(0, append.length()-3);
@@ -79,8 +80,8 @@ public class DBtoXLS
 	private static ResultSet readTable(Statement st, String dbname) throws SQLException {
 		String query="";
 		switch(dbname){
-		case "USERS": query = "SELECT user_id, AES_DECRYPT(mns_user_id, \"insertpasswordhere\"),AES_DECRYPT(first_name, \"insertpasswordhere\"), AES_DECRYPT(last_name, \"insertpasswordhere\"), AES_DECRYPT(email, \"insertpasswordhere\"), role_id from users;";break;
-		case "VENDOR": query = "SELECT vendor.vendor_id, vendor.vendor_code, AES_DECRYPT(vendor_name, \"insertpasswordhere\") as vendor_name FROM vendor;";break;
+		case "USERS": query = "SELECT user_id, AES_DECRYPT(mns_user_id, \"abcd\"),AES_DECRYPT(first_name, \"abcd\"), AES_DECRYPT(last_name, \"abcd\"), AES_DECRYPT(email, \"abcd\"), role_id from users;";break;
+		case "VENDOR": query = "SELECT vendor.vendor_id, vendor.vendor_code, AES_DECRYPT(vendor_name, \"abcd\") as vendor_name FROM vendor;";break;
 		default: query="SELECT * FROM "+dbname+";";break;
 		}
 		ResultSet rs = st.executeQuery(query);
@@ -108,10 +109,8 @@ public class DBtoXLS
 	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/"+DBNAME;
-        String userName = "root";String password = "root";  
-        //url="jdbc:mysql://fodensidrdamql01.mysql.database.azure.com:3306/rda?verifyServerCertificate=TRUE&useSSL=TRUE&requireSSL=TRUE&serverTimezone=Europe/London";
-    	//userName="rdauser@fodensidrdamql01"; password="Rdausr@123";
-        Class.forName(driver);
+        String userName = "root";String password = "root";
+    	Class.forName(driver);
         System.out.println("Connecting to "+url);
         Connection con = DriverManager.getConnection(url,userName,password);   
 		if(con!=null)

@@ -94,12 +94,12 @@ public class FirstSeleniumTest
 	    driver.navigate().to(url);
 	    WebElement we = null;
 	    we=driver.findElement(By.xpath("//*[@id=\"form1\"]"));
-	    we.sendKeys("k130593");
+	    we.sendKeys("");
 	    we.sendKeys(Keys.ENTER);	
 	    we=driver.findElement(By.xpath("//*[@id=\"password-btn\"]"));
 	    we.click();
 	    we=driver.findElement(By.xpath("//*[@id=\"password-login\"]"));
-	    we.sendKeys("July@072019");
+	    we.sendKeys("");
 	    we.sendKeys(Keys.ENTER);	    
 	    WebDriverWait wait = new WebDriverWait(driver, 50);
 	    wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"ng-app\"]/body/div[12]/div[3]/div[2]/span[1]/img")));
