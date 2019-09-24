@@ -12,8 +12,9 @@ import com.codoid.products.fillo.Fillo;
 
 public class DBtoXLS
 {
+	//Please change data encryption password and DB details
 	public static String filloquery = "INSERT INTO pt_rda(A,B,C,D,E,F) VALUES(";
-	public static String DBNAME = "rda_pt";
+	public static String DBNAME = "rda";
 	public static String FILEPATH="D:/Users/886758/Documents/Keerthiga_886758/M&S/RDA/RDA_AWS_DB.xlsx";
 	public static int maxHeader=6;//not less than 3
 	public static boolean consoleFlag=true;

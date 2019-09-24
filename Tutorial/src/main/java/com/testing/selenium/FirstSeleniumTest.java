@@ -9,11 +9,16 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.util.ResourceUtils;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirstSeleniumTest 
 {
@@ -109,8 +114,9 @@ public class FirstSeleniumTest
 	}
 	private static WebDriver getWebDriver() throws FileNotFoundException
 	{
-		File file = ResourceUtils.getFile("classpath:chromeDriver\\chromedriver.exe");
-		System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());	 
+		//File file = ResourceUtils.getFile("classpath:chromeDriver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+		WebDriverManager.chromedriver().setup();
 	    WebDriver driver=new ChromeDriver();  
 		return driver;
 	}
